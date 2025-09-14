@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, Text } from 'react-native';
+import { Alert, Platform, Pressable, StyleSheet, Text } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -22,6 +22,17 @@ export default function HomeScreen() {
         <Text>MI PRIMERA APLICACIÓN MÓVIL</Text>
         <Text>ESTA ES UNA PRUEBA DE GIT PERSONAL</Text>
         <Text>estoy en mi rama personal de fernando</Text>
+        
+        <Text>HOLA MUNDO!!!</Text>
+
+        <Pressable
+          style={({ pressed }) => [
+            { backgroundColor: pressed ? "#555" : "#2196F3" },
+          ]}
+          onPress={() => Alert.alert("¡Hola Mundo desde Pressable!")}
+        >
+        <Text>Presióname</Text>
+      </Pressable>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
