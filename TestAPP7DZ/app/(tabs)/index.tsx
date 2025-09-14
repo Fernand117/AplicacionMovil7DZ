@@ -20,9 +20,11 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Bienvenido xd!</ThemedText>
+        <Button title="Da clic aqui xd"/>
         <Text>MI PRIMERA APLICACIÓN MÓVIL</Text>
         <Text>ESTA ES UNA PRUEBA DE GIT PERSONAL</Text>
+        <Text >Prueba Alejandro Olmos</Text>
         <text>RAMA DE ZAHIR Y BOTON</text>
         <button>Click me soy ZAHIR</button>
          <Button title={'Click me'}></Button>
