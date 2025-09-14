@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, Button } from 'react-native';
 
 import { Collapsible } from '@/components/ui/collapsible';
 import { ExternalLink } from '@/components/external-link';
@@ -31,6 +31,8 @@ export default function TabTwoScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedText>MI SEGUNDO CAMBIOS</ThemedText>
+      <ThemedText>INICIAR SESION XD</ThemedText>
+      <Button title='Iniciar sesion XD'></Button>
       <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{' '}
