@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Button, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -20,21 +20,31 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome Stranger!</ThemedText>
+        <ThemedText type="title">XD!!!</ThemedText>
         
         
         
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Da click al botton</ThemedText>
+        <ThemedText type="subtitle">Asi se roban los datos de la empresa www</ThemedText>
 
-        <Button 
-        title='Click aqui para ganar un iphone'
-        color="#dc3bdcff"
-        onPress={() => router.push('/virus')} 
+      <Image
+  source={require('../../assets/images/gato.jpg')}
+  style={{
+    width: 200,
+    height: 200,
+    borderRadius: 16,
+    borderWidth: 2,
+    resizeMode: 'cover',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+  }}
+/>
 
-        ></Button>
+
         
       </ThemedView>
       
