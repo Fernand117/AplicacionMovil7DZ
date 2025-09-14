@@ -21,6 +21,7 @@ export default function HomeScreen() {
         <ThemedText type="title">Welcome!</ThemedText>
         <Text>MI PRIMERA APLICACIÓN MÓVIL</Text>
         <Text>ESTA ES UNA PRUEBA DE GIT PERSONAL</Text>
+        <Text>Git</Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
