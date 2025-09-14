@@ -1,11 +1,36 @@
 import { Image } from "expo-image";
-import { Button, StyleSheet, Text } from "react-native";
+import { Button, Platform, StyleSheet, Text, View } from "react-native";
 
 import { HelloWave } from "@/components/hello-wave";
 import ParallaxScrollView from "@/components/parallax-scroll-view";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
-import { useRouter } from "expo-router";
+import { Link } from "expo-router";
+const styles = StyleSheet.create({
+    reactLogo: {
+        width: 120,
+        height: 120,
+        resizeMode: "contain",
+        alignSelf: "center",
+        marginBottom: 16,
+    },
+    titleContainer: {
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 8,
+        marginBottom: 24,
+    },
+    stepContainer: {
+        marginBottom: 24,
+        padding: 16,
+        borderRadius: 12,
+        backgroundColor: "#f0f0f0",
+    },
+    loginButtonContainer: {
+        padding: 24,
+        alignItems: "center",
+    },
+});
 
 export default function HomeScreen() {
     return (
