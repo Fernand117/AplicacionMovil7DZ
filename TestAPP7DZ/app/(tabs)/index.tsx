@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, Text } from 'react-native';
+import { Platform, StyleSheet, Text, View, Button, Alert } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -19,8 +19,18 @@ export default function HomeScreen() {
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
-        <Text>MI PRIMERA APLICACIÓN MÓVIL</Text>
+        <Text>MI PRIMERA APLICACIÓN MÓVI</Text>
         <Text>ESTA ES UNA PRUEBA DE GIT PERSONAL</Text>
+       
+        <Text style={styles.Text1A}>Hola mevianOs</Text>
+         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Button
+        title="Tocame"
+        color="#4CAF50" // opcional
+        onPress={() => Alert.alert('Hola XD')}
+      />
+    </View>
+
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -76,8 +86,17 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
+          
     </ParallaxScrollView>
+
+    
+
   );
+
+
+
+
+
 }
 
 const styles = StyleSheet.create({
@@ -96,5 +115,9 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+  },
+  Text1A: {
+    color: 'blue',
+    fontSize: 20,
   },
 });
