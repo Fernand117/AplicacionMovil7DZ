@@ -85,6 +85,8 @@ export default function TabTwoScreen() {
           </ThemedText>{' '}
           library to create a waving hand animation.
         </ThemedText>
+         <ThemedText>Este es un nuevo texto agregado de dylan jsjsjjs</ThemedText>
+         <ThemedText>Este es un nuevo texto agregado de dylan jsjsjjs</ThemedText>
         {Platform.select({
           ios: (
             <ThemedText>
