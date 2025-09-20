@@ -26,7 +26,6 @@ export default function HomeScreen() {
         
         <HelloWave />
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Da click al botton</ThemedText>
 
         <Button 
@@ -34,10 +33,7 @@ export default function HomeScreen() {
         color="#dc3bdcff"
         onPress={() => router.push('/virus')} 
 
-        ></Button>
-        
-      </ThemedView>
-      
+        ></Button>      
       
     </ParallaxScrollView>
   );
