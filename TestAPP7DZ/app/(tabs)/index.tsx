@@ -21,7 +21,7 @@ export default function HomeScreen() {
         <ThemedText type="title">Welcome!</ThemedText>
         <Text>MI PRIMERA APLICACIÓN MÓVIL</Text>
         <Text>ESTA ES UNA PRUEBA DE GIT PERSONAL</Text>
-        <Text>Hola que tal soy  nuevo en esto </Text>
+        <Text>Hola que tal soy ALEXIS  SILVA  </Text>
       <Pressable>
           Enviar
       </Pressable>
