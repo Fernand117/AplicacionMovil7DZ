@@ -23,9 +23,9 @@ export default function Login() {
     });
 
     return (
-        <ScrollView contentContainerStyle={{ backgroundColor: theme === "dark" ? "#362abeff" : "#fff", flex: 1 }}>
-            <View style={styles.reactLogo}>
-                <Image source={require("../assets/images/react-logo.png")} style={styles.reactLogo} />
+        <ScrollView contentContainerStyle={{ backgroundColor: theme === "dark" ? "#000" : "#fff", flex: 1 }}>
+            <View>
+                <Image source={require("../assets/images/klipartz.com.png")} style={styles.reactLogo} />
             </View>
 
             <View style={styles.containerView}>
@@ -34,18 +34,18 @@ export default function Login() {
 
                 <TextInput placeholder="Contraseña" placeholderTextColor={theme === "dark" ? "#aaa" : "#555"} secureTextEntry={true} textContentType="password" keyboardType="default" style={[styles.input, { color: theme === "dark" ? "#fff" : "#000" }, { borderColor: theme === "dark" ? "#ccc" : "#212121" }]} onChangeText={(text) => setForm({ ...form, password: text })} />
 
-                <Pressable style={({ pressed }) => [styles.button, { backgroundColor: pressed ? "#3F51B5" : "navy" }]} onPress={() => ValidateLogin(form.usuario, form.password, route)}>
-                    <Text style={{ color: "white", fontSize: 18, textAlign: "center" }}>Iniciar Sesión</Text>
+                <Pressable style={({ pressed }) => [styles.button, { backgroundColor: pressed ? "#844302ff" : "#ea7d10ff" }]} onPress={() => ValidateLogin(form.usuario, form.password, route)}>
+                    <Text style={{ color: "white", fontSize: 18, textAlign: "center" }}>Iniciar Sesion</Text>
                 </Pressable>
 
                 <Text style={{ textAlign: "center", marginVertical: 20, color: theme === "dark" ? "#fff" : "#000" }}>
                     ¿Olvidaste tu contraseña?{" "}
-                    <Text style={{ color: "#3F51B5", fontWeight: "bold" }} onPress={() => route.push("/login")}>
+                    <Text style={{ color: "#ea7d10ff", fontWeight: "bold" }} onPress={() => route.push("/login")}>
                         Recuperar contraseña
                     </Text>
                 </Text>
 
-                <Pressable style={({ pressed }) => [styles.button, { backgroundColor: pressed ? "#009688" : "#00796B" }]}>
+                <Pressable style={({ pressed }) => [styles.button, { backgroundColor: pressed ? "#a05947ff" : "#f59c85ff" }]}>
                     <Text style={{ color: "white", fontSize: 18, textAlign: "center" }}>Crear una cuenta</Text>
                 </Pressable>
             </View>
@@ -65,10 +65,11 @@ const styles = StyleSheet.create({
     },
 
     reactLogo: {
-        height: 350,
-        width: 500,
-        bottom: 0,
-        left: 0,
+        marginTop: 50,
+        marginBottom: 10,
+        width: "auto",
+        height: 250,
+        resizeMode: "contain",
     },
     input: {
         height: 50,
